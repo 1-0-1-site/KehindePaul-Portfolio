@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  
+<meta name="title" content="Kehinde Paul | Web Designer in Nigeria">
+<meta name="description" content="Professional web designer creating clean, responsive websites for businesses in Nigeria. Book now and get your business online.">
+<meta name="keywords" content="web designer Nigeria, freelance web developer, small business website, responsive website, Kehinde Paul">
+<meta name="author" content="Kehinde Paul">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kehinde Paul | Web Designer</title>
+  <link rel="stylesheet" href="libs/bootstrap.min.css" />
+  <link rel="stylesheet" href="libs/aos.css" />
+  <style>
+    body { scroll-behavior: smooth; }
+    .hero {
+      background: #222;
+      color: #fff;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    .cta-btn {
+      background-color: #0baf4f;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    #loader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: white;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .spinner-border {
+      width: 3rem;
+      height: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="loader">
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <a class="navbar-brand" href="#">K.P.</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<section class="hero" data-aos="fade-up">
+  <h1>Hi, I'm Kehinde Paul</h1>
+  <p>I design clean, responsive websites for small businesses.</p>
+  <a href="contact.html" class="cta-btn">Work With Me</a>
+</section>
+
+
+<footer>
+  <p>© 2025 Kehinde Paul. All rights reserved.</p>
+</footer>
+
+
+<script src="libs/bootstrap.bundle.min.js"></script>
+<script src="libs/aos.js"></script>
+
+<script>
+
+  AOS.init();
+  
+  window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+  });
+
+  setTimeout(() => {
+    const loader = document.getElementById("loader");
+    if (loader) loader.style.display = "none";
+  }, 3000);
+
+</script>
+
+</body>
+</html>
